@@ -7,14 +7,12 @@ namespace Internal
 	{
 	public:
 
-	private:
 	};
 
 	class NullSoundSystem final : public SoundSystem
 	{
 	public:
-
-	private:
+		
 	};
 }
 

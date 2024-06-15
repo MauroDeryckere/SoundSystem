@@ -22,6 +22,9 @@
     <Filter Include="Source Files\ServiceLocator">
       <UniqueIdentifier>{0fd1f7b6-c502-44ba-ac35-b99de6361920}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SoundSystem">
+      <UniqueIdentifier>{83e96cd7-dc1f-43ab-a71a-607ec4df7e15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -33,12 +36,21 @@
     <ClCompile Include="ServiceLocator.cpp">
       <Filter>Source Files\ServiceLocator</Filter>
     </ClCompile>
+    <ClCompile Include="FModSoundSystem.cpp">
+      <Filter>Source Files\SoundSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FModSoundSystemImpl.cpp">
+      <Filter>Source Files\SoundSystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ServiceLocator.h">
       <Filter>Header Files\ServiceLocator</Filter>
     </ClInclude>
     <ClInclude Include="FModSoundSystem.h">
+      <Filter>Header Files\SoundSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="FModSoundSystemImpl.h">
       <Filter>Header Files\SoundSystem</Filter>
     </ClInclude>
   </ItemGroup>

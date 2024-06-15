@@ -398,6 +398,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 !3rdParty/**/*
+!Data/**/*
 
 #cmake output
 build
