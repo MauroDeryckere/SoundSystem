@@ -19,6 +19,9 @@
     <Filter Include="Header Files\SoundSystem">
       <UniqueIdentifier>{08346ac5-eee2-45eb-84f3-1d2a6c914bff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ServiceLocator">
+      <UniqueIdentifier>{0fd1f7b6-c502-44ba-ac35-b99de6361920}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -28,7 +31,7 @@
       <Filter>Header Files\SoundSystem</Filter>
     </ClCompile>
     <ClCompile Include="ServiceLocator.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ServiceLocator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
