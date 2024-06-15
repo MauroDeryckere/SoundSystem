@@ -13,21 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\ServiceLocator">
+      <UniqueIdentifier>{45f9d473-6762-423c-ada8-ecabbd14f94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SoundSystem">
+      <UniqueIdentifier>{08346ac5-eee2-45eb-84f3-1d2a6c914bff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SoundSystem.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\SoundSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLocator.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ServiceLocator.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ServiceLocator</Filter>
     </ClInclude>
     <ClInclude Include="FModSoundSystem.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\SoundSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
