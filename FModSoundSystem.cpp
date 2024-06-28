@@ -9,4 +9,6 @@ namespace Internal
 	FModSoundSystem::~FModSoundSystem() noexcept = default;
 
 	void FModSoundSystem::Update() noexcept { m_pImpl->Update(); }
+
+	std::string_view FModSoundSystem::GetDataPath() const noexcept { return m_pImpl->GetDataPath(); }
 }

@@ -173,6 +173,7 @@ xcopy $(SolutionDir)3rdParty\FMOD_Studio_API_Windows\api\core\lib\x64\fmod.dll $
     <ClInclude Include="FModSoundSystem.h" />
     <ClInclude Include="FModSoundSystemImpl.h" />
     <ClInclude Include="ServiceLocator.h" />
+    <ClInclude Include="SoundData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

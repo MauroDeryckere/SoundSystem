@@ -16,6 +16,8 @@ namespace Internal
 
 		void Update() noexcept;
 
+		std::string_view GetDataPath() const noexcept;
+
 	private:
 		class FModSoundSystemImpl;
 		const std::unique_ptr<FModSoundSystemImpl> m_pImpl;

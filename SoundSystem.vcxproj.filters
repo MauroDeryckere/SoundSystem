@@ -25,6 +25,9 @@
     <Filter Include="Source Files\SoundSystem">
       <UniqueIdentifier>{83e96cd7-dc1f-43ab-a71a-607ec4df7e15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\SoundSystem\SoundData">
+      <UniqueIdentifier>{357f7094-5493-48ee-b255-3bd9b26c21d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="FModSoundSystemImpl.h">
       <Filter>Header Files\SoundSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundData.h">
+      <Filter>Header Files\SoundSystem\SoundData</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
