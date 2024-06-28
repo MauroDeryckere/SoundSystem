@@ -3,6 +3,11 @@
 
 #include "FModSoundSystem.h"
 
+#include <string>
+
+#include <fmod.hpp>
+#include <fmod_studio.hpp>
+
 namespace Internal
 {
 	class FModSoundSystem::FModSoundSystemImpl final
@@ -11,8 +16,13 @@ namespace Internal
 		FModSoundSystemImpl(std::string_view dataPath);
 		~FModSoundSystemImpl();
 
+		void Update() noexcept;
+
 	private:
-		const std::string m_DataPath;
+		std::string const m_DataPath;
+
+		FMOD::Studio::System* m_pStudio{ nullptr };
+		FMOD::System* m_pSystem{ nullptr }; //Core API
 	};
 }
 

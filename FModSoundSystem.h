@@ -4,7 +4,7 @@
 #include "SoundSystem.h"
 
 #include <memory>
-#include <string>
+#include <string_view>
 
 namespace Internal
 {
@@ -13,6 +13,8 @@ namespace Internal
 	public:
 		FModSoundSystem(std::string_view dataPath) noexcept;
 		~FModSoundSystem() noexcept;
+
+		void Update() noexcept;
 
 	private:
 		class FModSoundSystemImpl;

@@ -8,7 +8,5 @@ namespace Internal
 
 	FModSoundSystem::~FModSoundSystem() noexcept = default;
 
-
+	void FModSoundSystem::Update() noexcept { m_pImpl->Update(); }
 }
-
-
