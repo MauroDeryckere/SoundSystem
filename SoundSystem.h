@@ -1,6 +1,7 @@
 #ifndef SOUNDSYSTEM
 #define SOUNDSYSTEM
 
+#include <filesystem>
 #include <string>
 
 namespace Internal
@@ -13,7 +14,7 @@ namespace Internal
 
 		virtual void Update() noexcept = 0;
 
-		[[nodiscard]] virtual std::string_view GetDataPath() const noexcept = 0;
+		[[nodiscard]] virtual std::filesystem::path const& GetDataPath() const noexcept = 0;
 
 		SoundSystem(const SoundSystem&) = delete;
 		SoundSystem& operator=(const SoundSystem&) = delete;
@@ -29,7 +30,10 @@ namespace Internal
 
 		void Update() noexcept {}
 
-		std::string_view GetDataPath() const noexcept { return "NullSoundSystem DataPath"; }
+		std::filesystem::path const& GetDataPath() const noexcept { return m_DataPath; }
+
+	private:
+		std::filesystem::path const m_DataPath{ "NullSoundSystem DataPath" };
 	};
 }
 

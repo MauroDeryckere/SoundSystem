@@ -32,7 +32,7 @@ namespace Internal
 		ERRCHECK(m_pStudio->update());
 	}
 
-	std::string_view FModSoundSystem::FModSoundSystemImpl::GetDataPath() const noexcept
+	std::filesystem::path const& FModSoundSystem::FModSoundSystemImpl::GetDataPath() const noexcept
 	{
 		return m_DataPath;
 	}

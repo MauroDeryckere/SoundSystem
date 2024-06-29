@@ -3,6 +3,7 @@
 
 #include "FModSoundSystem.h"
 
+#include <filesystem>
 #include <string>
 
 #include <fmod.hpp>
@@ -22,7 +23,7 @@ namespace Internal
 
 		void Update() noexcept;
 
-		[[nodiscard]] std::string_view GetDataPath() const noexcept;
+		[[nodiscard]] std::filesystem::path const& GetDataPath() const noexcept;
 
 		FModSoundSystemImpl(const FModSoundSystemImpl&) = delete;
 		FModSoundSystemImpl(FModSoundSystemImpl&&) = delete;
@@ -30,7 +31,7 @@ namespace Internal
 		FModSoundSystemImpl& operator=(const FModSoundSystemImpl&&) = delete;
 	
 	private:
-		std::string const m_DataPath{ };
+		std::filesystem::path const m_DataPath{ };
 
 		//Max audio channels for fmod initialization
 		int static constexpr MAX_CHANNELS{ 1024 };

@@ -16,8 +16,8 @@ namespace Internal
 		SoundData(std::string_view path) :
 			soundPath{ path }
 		{
-			assert(std::filesystem::exists(std::filesystem::path{ ServiceLocator::GetSoundSystem().GetDataPath() } / path) 
-			    && std::filesystem::is_regular_file(std::filesystem::path{ ServiceLocator::GetSoundSystem().GetDataPath() } / path));
+			assert(std::filesystem::exists(ServiceLocator::GetSoundSystem().GetDataPath() / path) 
+			    && std::filesystem::is_regular_file(ServiceLocator::GetSoundSystem().GetDataPath() / path));
 		}
 
 		~SoundData() = default;
