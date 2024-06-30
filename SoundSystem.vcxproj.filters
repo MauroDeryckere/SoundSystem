@@ -28,6 +28,9 @@
     <Filter Include="Header Files\SoundSystem\SoundData">
       <UniqueIdentifier>{357f7094-5493-48ee-b255-3bd9b26c21d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Threading">
+      <UniqueIdentifier>{d07f47a2-b965-401d-8137-fad7b5ec5e40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="SoundData.h">
       <Filter>Header Files\SoundSystem\SoundData</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadsafeQueue.h">
+      <Filter>Header Files\Threading</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

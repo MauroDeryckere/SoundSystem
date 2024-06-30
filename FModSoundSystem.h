@@ -18,6 +18,9 @@ namespace Internal
 
 		std::filesystem::path const& GetDataPath() const noexcept;
 
+		bool LoadSound(SoundData const& soundData) noexcept;
+		bool UnloadSound(std::string_view sound) noexcept;
+
 	private:
 		class FModSoundSystemImpl;
 		const std::unique_ptr<FModSoundSystemImpl> m_pImpl;

@@ -6,6 +6,8 @@
 
 namespace Internal
 {
+	struct SoundData;
+
 	class SoundSystem
 	{
 	public:
@@ -15,6 +17,9 @@ namespace Internal
 		virtual void Update() noexcept = 0;
 
 		[[nodiscard]] virtual std::filesystem::path const& GetDataPath() const noexcept = 0;
+
+		virtual bool LoadSound(SoundData const& soundData) noexcept = 0;
+		virtual bool UnloadSound(std::string_view sound) noexcept = 0;
 
 		SoundSystem(const SoundSystem&) = delete;
 		SoundSystem& operator=(const SoundSystem&) = delete;
@@ -30,7 +35,10 @@ namespace Internal
 
 		void Update() noexcept {}
 
-		std::filesystem::path const& GetDataPath() const noexcept { return m_DataPath; }
+		[[nodiscard]] std::filesystem::path const& GetDataPath() const noexcept { return m_DataPath; }
+
+		bool LoadSound(SoundData const&) noexcept { return false; }
+		bool UnloadSound(std::string_view) noexcept { return false;  }
 
 	private:
 		std::filesystem::path const m_DataPath{ "NullSoundSystem DataPath" };
