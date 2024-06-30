@@ -14,7 +14,7 @@ int main()
 	
 	Internal::SoundData testSound{ "Gunshot.wav" };
 
-	auto const result = Internal::ServiceLocator::GetSoundSystem().LoadSound(testSound);
+	[[maybe_unused]] auto const result = Internal::ServiceLocator::GetSoundSystem().LoadSound(testSound);
 	assert(result);
 
 	//Simple loop to be replaced with the game engine loop

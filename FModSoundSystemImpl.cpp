@@ -44,7 +44,7 @@ namespace Internal
 			else
 			{
 				assert(m_SoundsToRelease.contains(pSound));
-				pSound->release();
+				ERRCHECK(pSound->release());
 				m_SoundsToRelease.erase(pSound);
 			}
 		}
